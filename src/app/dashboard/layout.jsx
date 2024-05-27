@@ -1,16 +1,6 @@
 import Link from "next/link";
 import ClientMenuButton from "@/app/dashboard/client-button";
-
-function MenuButton({ href, children }) {
-  return (
-    <Link
-      href={href}
-      style={{ border: "solid 1px white", padding: 10, display: "block" }}
-    >
-      {children}
-    </Link>
-  );
-}
+import MenuButton from "@/app/dashboard/menuButton";
 
 export default function DashboardLayout({ children }) {
   return (
